@@ -1,0 +1,1 @@
+{"name":"yuzhe","private":true,"workspaces":["apps/*","packages/*"],"scripts":{"typecheck":"npm run typecheck -ws","build":"npm run build -ws","lint":"npm run lint -ws","test":"npm run test -ws"},"devDependencies":{"typescript":"^5.7.3"}}

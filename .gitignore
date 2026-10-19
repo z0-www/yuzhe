@@ -1,0 +1,11 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+.env
+.env.*
+!.env.example
+apps/mobile/android/.gradle/
+apps/mobile/android/**/build/
+apps/mobile/android/app/src/main/assets/public/
+apps/mobile/android/local.properties

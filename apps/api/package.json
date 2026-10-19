@@ -1,0 +1,1 @@
+{"name":"@yuzhe/api","version":"0.1.0","type":"module","scripts":{"dev":"tsx src/server.ts","build":"tsc -p tsconfig.json","typecheck":"tsc -p tsconfig.json --noEmit","lint":"tsc -p tsconfig.json --noEmit","test":"node dist/server.js --self-test"},"dependencies":{"@yuzhe/contracts":"0.1.0"},"devDependencies":{"@types/node":"^22.10.2","tsx":"^4.19.2","typescript":"^5.7.3"}}
