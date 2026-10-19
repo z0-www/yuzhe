@@ -8,7 +8,7 @@
     "build": "vite build",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "tsc -p tsconfig.json --noEmit",
-    "test": "node -e \"console.log('mobile: manual interaction checklist in docs/TEST-PLAN.md')\"",
+    "test": "tsx --test src/*.test.ts",
     "cap:sync": "npm run build && cap sync",
     "cap:add:android": "cap add android",
     "cap:open:android": "cap open android"
@@ -25,6 +25,8 @@
   },
   "devDependencies": {
     "@types/react": "^19.0.6",
-    "@types/react-dom": "^19.0.2"
+    "@types/react-dom": "^19.0.2",
+    "tsx": "^4.19.2",
+    "@types/node": "^22.10.2"
   }
 }
