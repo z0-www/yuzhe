@@ -4,13 +4,16 @@
   "type": "module",
   "scripts": {
     "dev": "tsx src/server.ts",
+    "prebuild": "npm run build --workspace=@yuzhe/contracts && npm run build --workspace=@yuzhe/dsh-adapter",
     "build": "tsc -p tsconfig.json",
+    "pretypecheck": "npm run build --workspace=@yuzhe/contracts && npm run build --workspace=@yuzhe/dsh-adapter",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "tsc -p tsconfig.json --noEmit",
     "test": "tsx --test src/*.test.ts"
   },
   "dependencies": {
-    "@yuzhe/contracts": "0.1.0"
+    "@yuzhe/contracts": "0.1.0",
+    "@yuzhe/dsh-adapter": "0.1.0"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
